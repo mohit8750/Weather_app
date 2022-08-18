@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/8104745636.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="app_container">
+      <div class="search_box">
+        <label for="search_city"></label>
+        <input type="text" name="search_city" class="search_city" placeholder="Enter City" list="places" />
+        <button type="button" role="button" class="search_btn"><i class="fas fa-search"></i></button>
+        <datalist id="places">
+
+        </datalist>
+      </div>
+     
+      <div class="current_weather">
+        <div class="location">Rome, Italy</div>
+        <div class="date">12 Jan 2020</div>
+        <div class="temperature_value">15<span>°C</span></div>
+        <div class="weather_name">Sunny</div>
+        <div class="range">12°C/20°C</div>
+      </div>
+      <div class="forecast-chart">
+        <canvas class="line-chart" aria-label="Line chart of forecast temperature" role="img"></canvas>
+      </div>
+      <div class="forecast-container">
+        <div class="forecast-day1">
+          <div class="icon"></div>
+          <div class="date"></div>
+          <div class="temperature"></div>
+          <div class="nameWeather"></div>
+          <div class="min_max"></div>
+        </div>
+        <div class="forecast-day2">
+          <div class="icon"></div>
+          <div class="date"></div>
+          <div class="temperature"></div>
+          <div class="nameWeather"></div>
+          <div class="min_max"></div>
+        </div>
+        <div class="forecast-day3">
+          <div class="icon"></div>
+          <div class="date"></div>
+          <div class="temperature"></div>
+          <div class="nameWeather"></div>
+          <div class="min_max"></div>
+        </div>
+        <div class="forecast-day4">
+          <div class="icon"></div>
+          <div class="date"></div>
+          <div class="temperature"></div>
+          <div class="nameWeather"></div>
+          <div class="min_max"></div>
+        </div>
+        <div class="forecast-day5">
+          <div class="icon"></div>
+          <div class="date"></div>
+          <div class="temperature"></div>
+          <div class="nameWeather"></div>
+          <div class="min_max"></div>
+        </div>
+        <div class="forecast-day6">
+          <div class="icon"></div>
+          <div class="date"></div>
+          <div class="temperature"></div>
+          <div class="nameWeather"></div>
+          <div class="min_max"></div>
+        </div>
+        <div class="forecast-day7">
+          <div class="icon"></div>
+          <div class="date"></div>
+          <div class="temperature"></div>
+          <div class="nameWeather"></div>
+          <div class="min_max"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
